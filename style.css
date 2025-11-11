@@ -27,14 +27,14 @@
 }
 
 #backImage {
+  position: relative;
   width: 100%;
   height: 730px;
-  position: relative;
 }
 
 .mainContainerLeftBoxTextImage {
   background-color: black;
-  z-index: 1;
+  position: absolute;
   opacity: 0.5;
   height: 20%;
   width: 35%;
@@ -42,11 +42,39 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
 }
 
 #odinLogo {
-  width: 25%;
+  position: relative;
+  width: 23%;
+  left: 20%;
+}
+
+.odinText {
+  position: absolute;
+  font-family: NorseBold;
+  color: white;
+  font-size: 5rem;
+  top: 25%;
+  left: 45%;
+}
+
+.odinCredits {
+  position: absolute;
+  color: white;
+  top: 95%;
+  left: 15%;
+}
+
+.credits {
+  position: absolute;
+  color: white;
+  top: 95%;
+  left: 8%;
+}
+
+a {
+  color: white;
 }
 
 .mainContainerRightBox {
@@ -118,12 +146,13 @@
 }
 
 #create_account {
+  background-color: #596d48;
   height: 50px;
   width: 220px;
-  margin-bottom: 25px;
-  background-color: #596d48;
-  color: white;
   border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 25px;
 }
 
 #login {
