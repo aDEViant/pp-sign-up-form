@@ -16,31 +16,40 @@
 }
 
 .mainContainer {
-  /* border: 2px solid black; */
-  /* background-color: aquamarine; */
   height: 100vh;
   width: 100vw;
   display: flex;
 }
 
 .mainContainerLeftBox {
-  /* background-color: blue; */
   height: 100%;
   width: 35%;
-  padding-top: 7.8%;
+}
+
+#backImage {
+  width: 100%;
+  height: 730px;
+  position: relative;
 }
 
 .mainContainerLeftBoxTextImage {
   background-color: black;
   z-index: 1;
-  opacity: 0.1;
+  opacity: 0.5;
   height: 20%;
-  width: 100%;
+  width: 35%;
+  top: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+#odinLogo {
+  width: 25%;
 }
 
 .mainContainerRightBox {
-  /* border: 2px solid black; */
-  background-color: blueviolet;
   height: 100%;
   width: 65%;
 }
@@ -49,8 +58,8 @@
   background-color: rgb(238, 237, 237);
   height: 33.3%;
   padding: 75px 20px;
-  font-size: large;
-  font-weight: bold;
+  font-size: larger;
+  font-weight: 500;
 }
 
 .info1 {
@@ -60,9 +69,64 @@
 .rightBoxMiddleSection {
   background-color: white;
   height: 33.3%;
+  display: flex;
+}
+
+.middleSectionLeftBox {
+  height: 100%;
+  width: 35%;
+  padding: 20px 20px;
+}
+
+.letsStart {
+  margin-bottom: 15px;
+}
+
+#first_name,
+#last_name,
+#password {
+  margin-bottom: 10px;
+  width: 250px;
+}
+
+#password:focus {
+  border: 2px solid red;
+}
+
+#confirm_password:focus {
+  border: 2px solid red;
+}
+
+#email,
+#number,
+#confirm_password {
+  margin-top: 10px;
+  width: 250px;
+}
+
+.middleSectionRightBox {
+  background-color: white;
+  height: 100%;
+  width: 50%;
+  padding: 6% 2%;
 }
 
 .rightBoxLowerSection {
   background-color: rgb(238, 237, 237);
   height: 33.3%;
+  padding: 20px 20px;
+}
+
+#create_account {
+  height: 50px;
+  width: 220px;
+  margin-bottom: 25px;
+  background-color: #596d48;
+  color: white;
+  border-radius: 10px;
+}
+
+#login {
+  color: #596d48;
+  text-decoration: none;
 }

@@ -9,23 +9,79 @@
   <body>
     <div class="mainContainer">
       <div class="mainContainerLeftBox">
-        <div class="leftBoxBackgroundImage"></div>
-        <div class="mainContainerLeftBoxTextImage"></div>
+        <div class="leftBoxBackgroundImage">
+          <img
+            src="https://images.pexels.com/photos/34484243/pexels-photo-34484243.jpeg"
+            id="backImage"
+            alt="Background Image"
+          />
+        </div>
+
+        <div class="mainContainerLeftBoxTextImage">
+          <div class="odin">
+            <img src="/odin-lined.png" id="odinLogo" alt="The Odin Logo" />
+          </div>
+        </div>
       </div>
 
       <div class="mainContainerRightBox">
         <div class="rightBoxUpperSection">
           <p class="info1">
-            This is not a real online service! You know you need something <br> like this in your life to help you realize your deepest dreams.
-            <br>
-            Sign up <i>now</i> to get started. 
+            This is not a real online service! You know you need something
+            <br />
+            like this in your life to help you realize your deepest dreams.
+            <br />
+            Sign up <i>now</i> to get started.
           </p>
-          <p class="info2">
-            You know you want to.
+          <p class="info2">You <i>know</i> you want to.</p>
+        </div>
+
+        <div class="rightBoxMiddleSection">
+          <div class="middleSectionLeftBox">
+            <h3 class="letsStart">Let's do this!</h3>
+            <form action="GET">
+              <label for="first_name">FIRST NAME</label>
+              <br />
+              <input type="text" id="first_name" />
+
+              <br />
+
+              <label for="email">EMAIL</label>
+              <br />
+              <input type="email" id="email" />
+            </form>
+
+            <br />
+
+            <label for="password">PASSWORD</label>
+            <br />
+            <input type="password" id="password" />
+          </div>
+
+          <div class="middleSectionRightBox">
+            <label for="last_name">LAST NAME</label>
+            <br />
+            <input type="text" id="last_name" />
+            <br />
+
+            <label for="PHONE NUMBER">PHONE NUMBER</label>
+            <br />
+            <input type="tel" id="number" />
+            <br />
+
+            <label for="confirm_password">CONFIRM PASSWORD</label>
+            <br />
+            <input type="password" id="confirm_password" />
+          </div>
+        </div>
+
+        <div class="rightBoxLowerSection">
+          <button type="submit" id="create_account">Create Account</button>
+
+          <p class="createAccountText">
+            Already have an account? <a href="http://" id="login">Log in</a>
           </p>
         </div>
-        <div class="rightBoxMiddleSection"></div>
-        <div class="rightBoxLowerSection"></div>
       </div>
     </div>
     <script src="script.js"></script>
